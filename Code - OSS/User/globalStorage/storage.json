@@ -1,0 +1,78 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "2285caee55677fd06e11f1d984131e17e41bc59c494bd79c677b8fe2aed10116",
+    "telemetry.devDeviceId": "b54bdde8-3d3d-435b-8512-c0abe6ae4554",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/yorx/Documents/Angular/maps-app"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/yorx/Documents/Python": "__default__profile__",
+            "file:///home/yorx/Documents/Angular/maps-app": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/yorx/Documents/Angular/maps-app",
+            "backupPath": "/home/yorx/.config/Code - OSS/Backups/cb239e49b729979cd8127ddcf740f350",
+            "uiState": {
+                "mode": 1,
+                "x": 680,
+                "y": 0,
+                "width": 680,
+                "height": 731
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#282a36",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#f8f8f2",
+            "background": "#282a36",
+            "editorBackground": "#282a36",
+            "titleBarBackground": "#21222c",
+            "activityBarBackground": "#343746",
+            "sideBarBackground": "#21222c",
+            "statusBarBackground": "#191a21",
+            "statusBarNoFolderBackground": "#191a21"
+        },
+        "layoutInfo": {
+            "sideBarSide": "right",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 245,
+            "workspaces": {
+                "63740a19192c1ff023e5fa7f97925255": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "504ec578d86904a5fb9cadde2aa7ec40": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

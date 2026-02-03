@@ -12,6 +12,8 @@ return {
       view = {
         width = 28,
         relativenumber = true,
+        side = "left",
+
       },
       -- change folder arrow iconspq
       renderer = {

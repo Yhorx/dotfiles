@@ -3,32 +3,39 @@ import = [
     "~/.config/alacritty/themes/themes/ayu.toml"
 ]
 
-
 [cursor]
-
 style = {shape = "Beam",blinking = "On"}
-
-
 
 [window]
 dynamic_title = false
 resize_increments = true
-padding = { x = 1,y = 10}
-dynamic_padding = true
 opacity = 0.9
+dynamic_padding = true
 
-
+[window.padding]
+x = 0
+y = 0
 
 [selection]
 save_to_clipboard = true
-
 
 [terminal.shell]
 args = ["--login"]
 program = "/usr/bin/zsh"
 
 [font]
-  normal = { family = "Cascadia Code", style = "Regular" }
-  size = 13.0  # Ajusta el tamaño de la fuente
+size = 12
 
+[font.normal]
+family = "UbuntuMono Nerd Font"
+style = "Bold"
 
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
