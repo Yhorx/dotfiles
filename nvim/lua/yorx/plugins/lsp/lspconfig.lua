@@ -94,7 +94,6 @@ return {
 
 		mason_lspconfig.setup({
 			handlers = {},
-			-- default handler for installed servers
 			function(server_name)
 				lspconfig[server_name].setup({
 					capabilities = capabilities,
@@ -104,7 +103,6 @@ return {
 				lspconfig["ruff"].setup({
 					init_options = {
 						settings = {
-							-- Any extra CLI arguments for `ruff` go here.
 							args = {},
 						},
 					},
@@ -115,21 +113,19 @@ return {
 					capabilities = capabilities,
 					settings = {
 						pyright = {
-							-- Using Ruff's import organizer
 							disableOrganizeImports = true,
 						},
 						python = {
 							analysis = {
-								ignore = { "*" }, -- Using Ruff
-								typeCheckingMode = "off", -- Using mypy
+								ignore = { "*" },
+								typeCheckingMode = "off",
 							},
-							pythonPath = vim.fn.exepath("/home/jorge/.local/share/anaconda3/envs/pppwn/bin/python"),
+							pythonPath = vim.fn.exepath("/home/$USER/.local/share/anaconda3/envs/pppwn/bin/python"),
 						},
 					},
 				})
 			end,
 			["lua_ls"] = function()
-				-- configure lua server (with special settings)
 				lspconfig["lua_ls"].setup({
 					capabilities = capabilities,
 					settings = {
@@ -157,8 +153,9 @@ return {
 					end,
 				})
 			end,
-			["taildwindcss"] = function()
-				require("lspconfig").tailwindcss.setup({
+			["tailwindcss"] = function()
+				lspconfig["tailwindcss"].setup({
+					capabilities = capabilities,
 					filetypes = {
 						"html",
 						"css",
@@ -178,6 +175,32 @@ return {
 								},
 							},
 						},
+					},
+				})
+			end,
+			["eslint"] = function()
+				lspconfig["eslint"].setup({
+					capabilities = capabilities,
+					on_attach = function(client, bufnr)
+						vim.api.nvim_create_autocmd("BufWritePre", {
+							buffer = bufnr,
+							command = "EslintFixAll",
+						})
+					end,
+				})
+			end,
+			["emmet_ls"] = function()
+				lspconfig["emmet_ls"].setup({
+					capabilities = capabilities,
+					filetypes = {
+						"html",
+						"typescriptreact",
+						"javascriptreact",
+						"css",
+						"sass",
+						"scss",
+						"less",
+						"svelte",
 					},
 				})
 			end,

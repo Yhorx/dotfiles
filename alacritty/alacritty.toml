@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/ayu.toml"
+    "~/.config/alacritty/themes/themes/ayu_dark.toml"
 ]
 
 [cursor]
@@ -24,11 +24,11 @@ args = ["--login"]
 program = "/usr/bin/zsh"
 
 [font]
-size = 12
+size = 14
 
 [font.normal]
-family = "UbuntuMono Nerd Font"
-style = "Bold"
+family = "RecMonoCasual Nerd Font Mono"
+style = "Regular"
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -39,3 +39,6 @@ mods = "Control|Shift"
 action = "Copy"
 key = "C"
 mods = "Control|Shift"
+
+[env]
+TERM = "xterm-256color"

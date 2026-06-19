@@ -1,9 +1,0 @@
-{
-    "editor.fontFamily": "CaskaydiaCove Nerd Font Mono",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.fontFamily": "UbuntuMono Nerd Font Mono",
-    "terminal.integrated.cursorBlinking": true,
-    "workbench.colorTheme": "Dracula Theme",
-    "terminal.integrated.fontSize": 14,
-    "editor.fontLigatures":true
-}

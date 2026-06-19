@@ -32,7 +32,10 @@ return {
         "pyright",
         "ruff",
         "clangd",
-        "angularls"
+        "angularls",
+        "tailwindcss",
+        "eslint",
+        "emmet_ls",
       },
     })
 

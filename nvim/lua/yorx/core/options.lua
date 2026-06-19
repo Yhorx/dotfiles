@@ -10,11 +10,10 @@ opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
 opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
-
 opt.wrap = true
 
 -- search settings
-opt.ignorecase = true -- ignore case when searching
+opt.ignorecase = true -- ignore case when searching:set laststatus?
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 opt.cursorline = true
@@ -38,8 +37,13 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 
--- activate ligatures
-opt.guifont =  "Cascadia Code PL:h13"
+-- fix layout
+vim.opt.showtabline = 0
+opt.showmode = false      -- Don't show mode (e.g. -- INSERT --) since lualine already does
+opt.laststatus = 3       -- Global statusline (one statusline at the very bottom)
+opt.cmdheight = 0        -- Hide command line when not typing a command to place lualine at the bottom
+
+
 
 
 
